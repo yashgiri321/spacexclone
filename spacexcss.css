@@ -1,0 +1,258 @@
+:root{
+    --primary: #1E1E1E;
+    --dark: #121212;
+    --pure: #ffffff;
+    --gray: #1d1d1d;
+    --mild: #b9b8b8;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--pure);
+}
+
+header{
+    background:linear-gradient(135deg,rgba(0,0,0,1),rgba(0,0,0,0.2)), url("sunrise.jpg");
+    min-height: 100vh;
+    background-size:cover;
+}
+header nav{
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .nav-right a{
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 12px;
+    font-size: 15px;
+    
+}
+header nav .nav-right a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 17px;
+}
+header nav .brand  img:hover{
+transform: scale(0.6);
+}
+header nav .nav-right .search{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+header nav .nav-right .search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #ffffff;
+}
+header nav .nav-right .search img{
+    padding-right: 10px;
+}
+.social div{
+    border: 2px solid var(--pure);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+@keyframes  moveIn{
+    
+    from{
+         transform: translateX(-100px) ;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.fab {
+    color: var(--pure);
+}
+.social div:hover .fab{
+    color: var(--dark);
+    transition: all .5s ease-in-out;
+}
+.social div:hover{
+    background: var(--pure);
+}
+.hero{
+    position: relative;
+}
+.social{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--gray);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.container{
+    width: 1460px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh-90px);
+}
+.hero .cta h1{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: var(--pure);
+    margin-top: 130px;
+}
+.hero .cta .right-section img{
+margin-left: 40px;
+margin-top: 25px;
+transform: rotate(20deg);
+height: 70vh;
+animation: moveInSpace 11s ease-in-out infinite alternate;
+}
+
+@keyframes moveInSpace {
+   50% {
+        transform: translateY(100px)  rotate(-30deg) scale(0.7);
+    }
+    
+}
+
+.btn {
+    padding: 8px 30px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+ .btn-primary{
+    color: var(--dark);
+    background: var(--pure);
+    transition: all .5s ease-in-out;
+}
+.btn-primary:hover{
+    background: transparent;
+    color: var(--pure);
+    border-color: var(--pure);
+}
+ video{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    opacity: 1.2;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.text{
+    position: relative;
+    z-index: 9;
+    margin-top: 350px;
+    margin-left: 100px;
+    color: var(--pure);
+    min-width: 50%;
+}
+.text h3{
+    margin-bottom: 20px;
+}
+.text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.text h1.earth{
+    margin-top: -20px;
+}
+.text p{
+    margin-bottom: 60px;
+    margin-top: 25px;
+}
+.recent img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    margin-top:752px;
+    background-color: #000;
+}
+.recent .text2{
+    position: absolute;
+    margin-top:1150px;
+    color: var(--pure);
+    margin-left: 80px;
+}
+.text2 h3{
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+.text2 h1{
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+.starship img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top:1400px;
+}
+.starship .text3{
+    position: absolute;
+    margin-top: 1750px;
+    color: var(--pure);
+    margin-left: 80px;
+}
+.text3 h1{
+    font-size: 45px;
+}
+.text3 h1.bottom{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
